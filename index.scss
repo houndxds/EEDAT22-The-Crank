@@ -4,6 +4,7 @@ html, body
     height: 100%;
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
 }
 
 #grid-header
@@ -86,13 +87,32 @@ span
 {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
     grid-auto-flow: row;
     text-align: center;
     font-size: large;
+    border-bottom: solid 2px rgba($color: #000000, $alpha: 0.26);
 }
 
 #text-block
 {
     width: 30%;
+}
+
+#text-block
+{
+    margin-left: 20%;
+    margin-top: 5rem;
+}
+
+figure
+{
+    margin-left: -200%;
+}
+
+#graph
+{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 2rem;
 }

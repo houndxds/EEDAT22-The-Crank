@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: hidden;
 }
 
 #grid-header {
@@ -87,15 +88,33 @@ span {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   grid-auto-flow: row;
   text-align: center;
   font-size: large;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.26);
 }
 
 #text-block {
   width: 30%;
+}
+
+#text-block {
+  margin-left: 20%;
+  margin-top: 5rem;
+}
+
+figure {
+  margin-left: -200%;
+}
+
+#graph {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=index.css.map */
