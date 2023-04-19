@@ -1,0 +1,46 @@
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+}
+
+#grid-header
+{
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    grid-auto-flow: row;
+    text-align: center;
+    font-size: large;
+    height: 30%;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.26);
+}
+
+#grid-section
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    text-align: center;
+    font-size: large;
+    border-bottom: solid 2px rgba($color: #000000, $alpha: 0.26);
+}
+
+figure img
+{
+    margin: .5rem;
+}
+
+.icons
+{
+    border: 4px double #555;
+    transition-duration: .3s;
+}
+
+.icons:hover
+{
+    margin-top: -1rem;
+}

@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=abilities.css.map */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: hidden;
+}
+
+#grid-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: row;
+  text-align: center;
+  font-size: large;
+  height: 30%;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.26);
+}
+
+#grid-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-auto-flow: row;
+  text-align: center;
+  font-size: large;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.26);
+}
+
+figure img {
+  margin: .5rem;
+}
+
+.icons {
+  border: 4px double #555;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.icons:hover {
+  margin-top: -1rem;
+}
+/*# sourceMappingURL=abilities.css.map */
