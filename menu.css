@@ -8,7 +8,6 @@
   background-color: #111;
   overflow-x: hidden;
   padding-top: 60px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -18,7 +17,6 @@
   font-size: 25px;
   color: #818181;
   display: block;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -35,8 +33,7 @@
 }
 
 #main {
-  -webkit-transition: margin-left .5s;
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
@@ -48,16 +45,14 @@
     font-size: 18px;
   }
 }
-
 .hamburger {
   width: 30px;
   height: 4px;
-  background-color: black;
+  background-color: white;
   margin: 6px 0;
   margin-left: 10px;
 }
 
 span {
   cursor: pointer;
-}
-/*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=menu.css.map */

@@ -5,6 +5,8 @@ html, body
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-y: hidden;
+    background-color: rgba($color: #120e1d, $alpha: 1.0);
+    color: white;
 }
 
 #grid-header
@@ -16,7 +18,7 @@ html, body
     text-align: center;
     font-size: large;
     height: 30%;
-    border-bottom: solid 2px rgba(0, 0, 0, 0.26);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.26);
 }
 
 #grid-section
@@ -26,7 +28,7 @@ html, body
     grid-auto-flow: row;
     text-align: center;
     font-size: large;
-    border-bottom: solid 2px rgba($color: #000000, $alpha: 0.26);
+    border-bottom: solid 2px rgba($color: #ffffff, $alpha: 0.26);
 }
 
 figure img
@@ -36,11 +38,65 @@ figure img
 
 .icons
 {
-    border: 4px double #555;
-    transition-duration: .3s;
+    border: 4px double #7e7e7e;
+    transition-duration: 0.3s;
+    
 }
 
 .icons:hover
 {
     margin-top: -1rem;
+}
+
+#text
+{
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 20rem;
+}
+
+#text1
+{
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 20rem;
+}
+
+#text2
+{
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 20rem;
+}
+
+#text3
+{
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 20rem;
+}
+
+#text4
+{
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 20rem;
+}
+
+#text5
+{
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 20rem;
+}
+
+.abilitytext
+{
+    color: rgba(172, 172, 172, 0.6);
+    font-size: x-small;
+}
+
+.abilitydesc
+{
+    font-size: smaller;
 }
