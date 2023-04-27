@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="menu.css">
 
+
 </head>
+
 
 <body>
 
@@ -32,23 +34,28 @@
             <div class="hamburger"></div>
         </span>
     </nav>
+
     
     <main id="main">
+
+        <div id="bg"></div>
+
         <header id="grid-header">
             <h1><strong>Blitzcranks Abilities</strong></h1>
         </header>
 
+
         <section id="grid-section">
             <figure>
-                <img src="Blitzcrank_Mana_Barrier_HD.png" alt="Passive Ability" id="passive" class="icons" style="width: 4%; cursor: pointer;">
+                <img src="Blitzcrank_Mana_Barrier_HD.png" alt="Passive Ability" id="passive" class="icons" style="width: 4%; cursor: pointer;" onclick="show('text1')">
                 
-                <img src="Blitzcrank_Rocket_Grab_WR.png" alt="Q Ability" id="q-ability" class="icons" style="cursor: pointer;">
+                <img src="Blitzcrank_Rocket_Grab_WR.png" alt="Q Ability" id="q-ability" class="icons" style="cursor: pointer;" onclick="show('text2')">
 
-                <img src="Blitzcrank_Overdrive_WR.png" alt="W Ability" id="w-ability" class="icons" style="cursor: pointer;">
+                <img src="Blitzcrank_Overdrive_WR.png" alt="W Ability" id="w-ability" class="icons" style="cursor: pointer;" onclick="show('text3')">
 
-                <img src="Blitzcrank_Power_Fist_WR.png" alt="E Ability" id="e-ability" class="icons" style="cursor: pointer;">
+                <img src="Blitzcrank_Power_Fist_WR.png" alt="E Ability" id="e-ability" class="icons" style="cursor: pointer;" onclick="show('text4')">
 
-                <img src="Blitzcrank_Static_Field_WR.png" alt="R Ability" id="r-ability" class="icons" style="cursor: pointer;">
+                <img src="Blitzcrank_Static_Field_WR.png" alt="R Ability" id="r-ability" class="icons" style="cursor: pointer;" onclick="show('text5')">
             </figure>
 
             <video id="video-passive" controls="none" autoplay loop muted playsinline width="640" height="360" style="pointer-events: none;">
@@ -56,9 +63,70 @@
             </video>
         </section>
 
+
+        <div id="text">
+            <p><span class="abilitytext" style="cursor: text;"><strong>PASSIVE</strong></span>
+                <br>
+                <strong>MANA BARRIER</strong>
+                <br>
+                <span class="abilitydesc" style="cursor: text;">Blitzcrank gains a shield based on their mana when dropping to <br> low health.</span>
+            </p>
+        </div>
+
+        <div id="text1" style="display: none;">
+            <p><span class="abilitytext" style="cursor: text;"><strong>PASSIVE</strong></span>
+                <br>
+                <strong>MANA BARRIER</strong>
+                <br>
+                <span class="abilitydesc" style="cursor: text;">Blitzcrank gains a shield based on their mana when dropping to <br> low health.</span>
+            </p>
+        </div>
+
+        <div id="text2" style="display: none;">
+            <p><span class="abilitytext" style="cursor: text;"><strong>Q</strong></span>
+                <br>
+                <strong>ROCKET GRAB</strong>
+                <br>
+                <span class="abilitydesc" style="cursor: text;">Blitzcrank fires their right hand to grab an opponent on its path, <br> dealing damage and dragging it back to them.
+                </span>
+            </p>
+        </div>
+
+        <div id="text3" style="display: none;">
+            <p><span class="abilitytext" style="cursor: text;"><strong>W</strong></span>
+                <br>
+                <strong>OVERDRIVE</strong>
+                <br>
+                <span class="abilitydesc" style="cursor: text;">Blitzcrank super charges themself to get dramatically <br> increased Move and Attack Speed. They are temporarily <br> slowed after the effect ends.
+                </span>
+            </p>
+        </div>
+
+        <div id="text4" style="display: none;">
+            <p><span class="abilitytext" style="cursor: text;"><strong>E</strong></span>
+                <br>
+                <strong>POWER FIST</strong>
+                <br>
+                <span class="abilitydesc" style="cursor: text;">Blitzcrank charges up their fist to make the next attack deal <br> double damage and pop their target up in the air.
+                </span>
+            </p>
+        </div>
+
+        <div id="text5" style="display: none;">
+            <p><span class="abilitytext" style="cursor: text;"><strong>R</strong></span>
+                <br>
+                <strong>STATIC FIELD</strong>
+                <br>
+                <span class="abilitydesc" style="cursor: text;">Enemies attacked by Blitzcrank are marked and take lightning <br> damage after 1 second. Additionally, Blitzcrank can activate this <br> ability to remove nearby enemies' shields, damage them, and <br> silence them briefly.
+                </span>
+            </p>
+        </div>
+        
+
     </main>
 
 
+<script src="abilitytext.js"></script>
 <script src="script.js"></script>
 <script src="video.js"></script>
 
