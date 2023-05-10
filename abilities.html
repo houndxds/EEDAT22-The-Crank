@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="abilities.css">
     <link rel="stylesheet" href="menu.css">
 
-
 </head>
-
 
 <body>
 
@@ -26,20 +24,18 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
             <a href="#">Abilities</a>
-            <a href="#">Clients</a>
+            <a href="skins.html">Skins</a>
         </div>
 
-        <span onclick="openNav()">
+        <div id="menu" onclick="openNav()">
             <div class="hamburger"></div>
             <div class="hamburger"></div>
             <div class="hamburger"></div>
-        </span>
+        </div>
     </nav>
 
     
     <main id="main">
-
-        <div id="bg"></div>
 
         <header id="grid-header">
             <h1><strong>Blitzcranks Abilities</strong></h1>
@@ -48,18 +44,18 @@
 
         <section id="grid-section">
             <figure>
-                <img src="Blitzcrank_Mana_Barrier_HD.png" alt="Passive Ability" id="passive" class="icons" style="width: 5%; cursor: pointer;" onclick="show('text1')">
+                <img src="/Pictures/Blitzcrank_Mana_Barrier_HD.png" alt="Passive Ability" id="passive" class="icons" style="width: 5%; cursor: pointer;" onclick="show('text1')">
                 
-                <img src="Blitzcrank_Rocket_Grab_WR.png" alt="Q Ability" id="q-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text2')">
+                <img src="Pictures/Blitzcrank_Rocket_Grab_WR.png" alt="Q Ability" id="q-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text2')">
 
-                <img src="Blitzcrank_Overdrive_WR.png" alt="W Ability" id="w-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text3')">
+                <img src="Pictures/Blitzcrank_Overdrive_WR.png" alt="W Ability" id="w-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text3')">
 
-                <img src="Blitzcrank_Power_Fist_WR.png" alt="E Ability" id="e-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text4')">
+                <img src="Pictures/Blitzcrank_Power_Fist_WR.png" alt="E Ability" id="e-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text4')">
 
-                <img src="Blitzcrank_Static_Field_WR.png" alt="R Ability" id="r-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text5')">
+                <img src="Pictures/Blitzcrank_Static_Field_WR.png" alt="R Ability" id="r-ability" class="icons" style="width: 10%; cursor: pointer;" onclick="show('text5')">
             </figure>
 
-            <video id="video-passive" controls="none" autoplay loop muted playsinline width="900" height="600" style="pointer-events: none;">
+            <video id="video-passive" autoplay loop muted playsinline width="900" height="600" style="pointer-events: none;">
                 <source id="source-passive" src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0053/ability_0053_P1.webm">
             </video>
         </section>
@@ -123,7 +119,6 @@
             </p>
         </div>
         
-
     </main>
 
 
